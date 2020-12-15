@@ -49,7 +49,7 @@ def get_filters():
     while True:
             month = input('Please select a month to see (or type "all" for all months): ').lower()
             if (month.lower() in months) or (month.lower() == 'all'):
-                print('You selected ' + month.title() + '.')
+                print('You selected.'.format(month.title()))
                 break
             else:
                 print("Sorry, that's an invalid entry. Please try again.")
