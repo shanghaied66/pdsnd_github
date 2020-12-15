@@ -33,11 +33,11 @@ def get_filters():
 
 
         if city.lower() in CITY_DATA.keys():
-            print('You selected city ' + city.title() + '.')
+            print('You selected city {}.'.format(city.title()))
             break
         elif city.lower() == 'new york':
             city = 'New York City'.lower()
-            print('You selected city ' + city.title() + '.')
+            print('You selected city {}.'.format(city.title()))
             break
         else:
             print("Sorry, that's an invalid entry.")
@@ -61,7 +61,7 @@ def get_filters():
     while True:
         day = input('Please select a day of the week (or type "all" for all days): ').lower()
         if ( day.lower() in days) or (day.lower() == 'all'):
-            print('You selected ' + day.title() + '.')
+            print('You selected {}.'.format(day))
             break
         else:
             print("Sorry, that's an invalid entry.  Please try again.")
